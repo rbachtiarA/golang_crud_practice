@@ -1,0 +1,11 @@
+{{define "movieList"}}
+    <li style="width: 250px; margin-top: 1rem;">
+        <div style="display: flex; flex-direction: column;">
+            <h3 style="margin: 0;">{{.Title}}</h3>
+            <p style="margin: 0;">Directed by : {{.Director.Firstname}} {{.Director.Lastname}}</p>
+        </div>
+        <div style="display: flex;">
+            <a href="/movies/{{ .ID }}">Details</a>
+        </div>
+    </li>
+{{end}}

@@ -1,0 +1,10 @@
+{{define "mainContentFragment"}}
+<article>
+    <h2>Movie List</h2>
+    <ul>
+        {{range .}}
+            {{template "movieList" .}}
+        {{end}}
+    </ul>
+</article>
+{{end}}
