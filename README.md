@@ -14,17 +14,17 @@ Copy / Extract all file, and then run the command prompt on files directory `go 
 
 ## GET MOVIE BY ID
 
-`GET` http://localhost:5001/movie/{id}
+`GET` http://localhost:8080/movie/{id}
 
 ## CREATE NEW MOVIE
 
-`POST` http://localhost:5001/movies
+`POST` http://localhost:8080/movies
 
 ### Body
 
-```JSON
+```go
 {
-    "title": string,
+    "title": string
     "isbn": string,
     "director" : {
         "firstname": string,
@@ -35,9 +35,9 @@ Copy / Extract all file, and then run the command prompt on files directory `go 
 
 ## UPDATE A MOVIE
 
-`PUT` http://localhost:5001/movies/{id}
+`PUT` http://localhost:8080/movies/{id}
 
-```
+```go
 {
     "title": string,
     "isbn": string,
